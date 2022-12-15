@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: lime;
+  background-color: #fff;
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+.body-height {
+  /* KEEPING FOOTER ALWAYS AT SCREEN BOTTOM : SCREEN - FOOTER HEIGHT */
+  min-height: calc(100vh - 40px);
+}
+
+footer {
+  height: 40px;
+}
+
+.flex-display {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-display {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-row: span 4;
+  grid-column: span 4;
+}
